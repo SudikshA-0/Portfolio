@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(12, 26, 33);
+    color: white;
+    font-family: 'Poppins', serif;
+
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(pics/bg4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(25, 37, 44);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+nav ul li a:hover {
+    color: rgb(59, 184, 203);
+    font-size: 1.03rem;
+
+}
+
+.left {
+    font-size: 2.2rem;
+}
+
+.header-text {
+    margin: 150px 50px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+}
+
+.teal {
+    color: rgb(59, 184, 203);
+}
+
+.header-text p {
+    font-size: 22px;
+}
+
+<!--about-->
+
+#about {
+    padding: 80px 0;
+    color: rgb(116, 107, 153);  
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 80px 0;
+
+}
+
+.about1 {
+    flex-basis: 35%;
+
+}
+
+.about1 img {
+    width: 80%;
+    height: 90%;
+    margin: 24px 25px;
+    border-radius: 17px;
+    transition: transform 0.5s;
+}
+
+.about1 img:hover {
+    transform: translateY(-10px);
+
+}
+
+
+
+.about2 {
+    flex-basis: 50%;
+}
+
+.sub-line {
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+
+}
+
+.tab-title {
+
+    margin: 40px 0 25px 0;
+}
+
+.tab-links {
+    font-size: 40px;
+    font-weight: 530;
+    cursor: pointer;
+    color: rgb(59, 184, 203);
+}
+
+
+.tab-content ul li {
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.blue {
+    color: rgb(77, 164, 178);
+    font-size: 20px;
+}
+
+.sub-line h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+
+}
+
+/*------projects-----*/
+#Projects {
+    padding: 30px 57px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 28px;
+    margin: 50px 0 0 0;
+}
+
+.project1 {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.project1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.project1:hover img {
+    transform: scale(1.1);
+}
+
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(105, 191, 204));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 450;
+    transition: height 0.5s;
+
+}
+
+.project1:hover .layer {
+    height: 100%;
+}
+
+
+.layer h3 {
+    font-weight: 600;
+    margin-bottom: 25px;
+
+}
+
+.layer a {
+    margin-top: 20px;
+    color: rgb(77, 164, 178);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+}
+
+/*-----contact------*/
+
+.contact-left {
+    flex-basis: 35%;
+    margin: 0 0 0 48px;
+
+}
+
+.contact-right {
+    flex-basis: 60%;
+
+}
+
+.contact-left p {
+    margin: 30px 0 0 0;
+
+}
+
+.contact-left p i {
+    color: rgb(77, 164, 178);
+    font-size: 25px;
+}
+
+.social-media {
+    margin-top: 30px;
+
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 15px;
+    color: rgb(111, 131, 135);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-media a:hover {
+    color: rgb(80, 184, 200);
+    transform: translateY(-5px);
+}
+
+.button {
+    background-color: rgb(77, 164, 178);
+    color: white;
+    border: none;
+    height: 39px;
+    width: 79px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: rgb(12, 26, 33);
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+.contact-right form {
+    width: 100%;
+    display: grid;
+
+
+}
+
+form input,
+form textarea {
+    width: 80%;
+    border: 0;
+    outline: none;
+    background-color: rgb(35, 48, 50);
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(50, 64, 66);
+    font-weight: 350;
+    margin-top: 20px;
+    padding: 15px 0;
+    font-size: 12px;
+
+    https://github.com/SudikshA-0/Portfolio
+}
